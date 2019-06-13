@@ -6,7 +6,7 @@ Pod::Spec.new do |spec|
   spec.license = { :type => 'BSD', :file => 'LICENSE' }
   spec.author = { 'Kyle Fuller' => 'kyle@fuller.li' }
   spec.social_media_url = 'http://twitter.com/kylefuller'
-  spec.source = { :git => 'https://github.com/kylef/Mockingjay.git', :tag => "#{spec.version}" }
+  spec.source = { :git => 'https://github.com/svvoff/Mockingjay.git', :tag => "#{spec.version}" }
   spec.ios.deployment_target = '8.0'
   spec.osx.deployment_target = '10.10'
   spec.requires_arc = true
@@ -21,11 +21,11 @@ Pod::Spec.new do |spec|
         'Sources/Mockingjay/MockingjayURLSessionConfiguration.m'
   end
 
-  spec.subspec 'XCTest' do |xctest_spec|
-    xctest_spec.dependency 'Mockingjay/Core'
-    xctest_spec.source_files = 'Sources/Mockingjay/XCTest.swift'
-    xctest_spec.frameworks = 'XCTest'
-    xctest_spec.pod_target_xcconfig = { 'ENABLE_BITCODE' => 'NO' }
-  end
+  # spec.subspec 'XCTest' do |xctest_spec|
+  #   xctest_spec.dependency 'Mockingjay/Core'
+  #   xctest_spec.source_files = 'Sources/Mockingjay/XCTest.swift'
+  #   xctest_spec.frameworks = 'XCTest'
+  #   xctest_spec.pod_target_xcconfig = { 'ENABLE_BITCODE' => 'NO' }
+  # end
 end
 
